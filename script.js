@@ -1,3 +1,4 @@
+/* variables declared will grab elements by ID*/
 const Question1a = document.getElementById('Question1a')
 const Question1b = document.getElementById('Question1b')
 const Question1c = document.getElementById('Question1c')
@@ -5,6 +6,8 @@ const Question1d = document.getElementById('Question1d')
 const btn1 = document.getElementById('btn1')
 const question1Results = document.getElementById('question1Results')
 
+/* the function will be used to get the correct 
+answer by using conditionals*/
 function firstQ(){
     if(Question1a.checked){
         question1Results.innerHTML='CORRECT!'
@@ -12,6 +15,9 @@ function firstQ(){
         question1Results.innerHTML='INCORRECT'
     }
 }
+
+/* the button variable will be used to talk with 
+DOM by adding an event listener when clicked */
 btn1.addEventListener('click',firstQ)
 
 
